@@ -1,1 +1,16 @@
 /* Posts Page CSS */
+#posts{
+    width: 40%;
+}
+
+.icon {
+  height: 24px;
+}
+
+.heart {
+    fill: none;
+}
+
+.heart.active {
+  fill: #737373;
+}

@@ -21,12 +21,193 @@
         window.location.replace("../account/login.html");
       }
     </script>
+    <style>
+      main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-block: 4rem;
+        margin-inline: 8rem;
+      }
+      .post {
+        display: flex;
+        flex-direction: column;
+        padding-inline: 2rem;
+        padding-block: 1rem;
+        border: 0.03rem solid #ededed;
+      }
+      .post:hover {
+        background-color: #f5f5f5;
+      }
+
+      .post p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .post-header {
+        display: flex;
+        justify-content: space-between;
+      }
+      .post-footer {
+        display: flex;
+        justify-content: space-between;
+      }
+    </style>
   </head>
   <body>
     <header></header>
 
     <main>
-      <h1>Posts</h1>
+      <h3>For You</h3>
+      
+      <section id="posts">
+        <div class="post">
+          <div class="post-header">
+            <span class="secondary-text">2024-01-02</span>
+            <span class="">...</span>
+          </div>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, deserunt.</p>
+          <div class="post-footer">
+            <span>@Teddy</span>
+            <!-- <object type="image/svg+xml" data="../images/heart.svg" class="icon"></object> -->
+            <svg
+              class="icon"
+              data-slot="icon"
+              stroke-width="1.5"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                class="heart"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-header">
+            <span class="secondary-text">2024-01-02</span>
+            <span class="">...</span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quis repellendus quia dolore ipsum laborum
+            commodi autem consectetur officia cum!
+          </p>
+          <div class="post-footer">
+            <span>@Teddy</span>
+            <!-- <object type="image/svg+xml" data="../images/heart.svg" class="icon"></object> -->
+            <svg
+              class="icon"
+              data-slot="icon"
+              stroke-width="1.5"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                class="heart"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-header">
+            <span class="secondary-text">2024-01-02</span>
+            <span class="">...</span>
+          </div>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ullam quam, porro deleniti praesentium ipsa
+            error, sed corrupti ad debitis aperiam unde?
+          </p>
+          <div class="post-footer">
+            <span>@Teddy</span>
+            <!-- <object type="image/svg+xml" data="../images/heart.svg" class="icon"></object> -->
+            <svg
+              class="icon"
+              data-slot="icon"
+              stroke-width="1.5"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                class="heart active"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-header">
+            <span class="secondary-text">2024-01-02</span>
+            <span class="">...</span>
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero repudiandae enim harum, voluptatum omnis
+            dolorem. Nihil.
+          </p>
+          <div class="post-footer">
+            <span>@Teddy</span>
+            <!-- <object type="image/svg+xml" data="../images/heart.svg" class="icon"></object> -->
+            <svg
+              class="icon"
+              data-slot="icon"
+              stroke-width="1.5"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                class="heart"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-header">
+            <span class="secondary-text">2024-01-02</span>
+            <span>...</span>
+          </div>
+          <p>
+            dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+          </p>
+          <div class="post-footer">
+            <span>@Teddy</span>
+            <svg
+              class="icon"
+              data-slot="icon"
+              stroke-width="1.5"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                class="heart active"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer></footer>
