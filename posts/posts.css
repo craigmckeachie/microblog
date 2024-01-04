@@ -1,6 +1,38 @@
 /* Posts Page CSS */
-#posts{
-    width: 40%;
+
+main {
+  display: grid;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+#posts {
+  width: 768px;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  border: 0.03rem solid #ededed;
+}
+.post:hover {
+  background-color: #f5f5f5;
+}
+
+.post p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.post-header {
+  display: flex;
+  justify-content: space-between;
+}
+.post-footer {
+  display: flex;
+  justify-content: space-between;
 }
 
 .icon {
@@ -8,9 +40,41 @@
 }
 
 .heart {
-    fill: none;
+  fill: none;
 }
 
 .heart.active {
   fill: #737373;
+}
+
+#menu {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  padding-left: 16rem;
+  list-style: none;
+  height: 100vh;
+}
+
+#menu li {
+  margin-bottom: 1.4rem;
+}
+
+#menu a {
+  text-decoration: none;
+  color: #404040;
+  font-size: 1.2rem;
+}
+
+#aside div.card {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  margin-right: 10rem;
+}
+
+.card {
+  background-color: #f5f5f5;
+  padding-inline: 2rem;
+  padding-block: 1rem;
 }
