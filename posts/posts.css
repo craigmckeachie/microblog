@@ -11,6 +11,15 @@ html {
   height: 100%;
 }
 
+header {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+  /* border-bottom: 1px solid #404040; */
+}
+
 main {
   display: grid;
   margin: 0 auto;
@@ -75,6 +84,10 @@ body {
 #menu,
 #aside div.card {
   display: none;
+}
+
+#aside {
+  margin-top: 4rem;
 }
 
 @media only screen and (min-width: 768px) {
