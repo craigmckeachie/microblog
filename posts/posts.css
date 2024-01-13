@@ -1,5 +1,16 @@
 /* Posts Page CSS */
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+}
+
 main {
   display: grid;
   margin: 0 auto;
@@ -7,8 +18,16 @@ main {
   grid-template-columns: 1fr 2fr 1fr;
 }
 
+body {
+  background-image: url(../images/hero@75.b2469a49.jpg);
+  background-size: 100rem;
+  background-repeat: repeat-y;
+  background-color: #f9fafc;
+}
+
 #posts {
   width: 768px;
+  background-color: white;
 }
 
 .post {
@@ -47,34 +66,41 @@ main {
   fill: #737373;
 }
 
-#menu {
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  padding-left: 16rem;
-  list-style: none;
-  height: 100vh;
-}
-
-#menu li {
-  margin-bottom: 1.4rem;
-}
-
-#menu a {
-  text-decoration: none;
-  color: #404040;
-  font-size: 1.2rem;
-}
-
-#aside div.card {
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  margin-right: 10rem;
-}
-
 .card {
   background-color: #f5f5f5;
   padding-inline: 2rem;
   padding-block: 1rem;
+}
+
+#menu,
+#aside div.card {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  #menu {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    padding-left: 16rem;
+    list-style: none;
+    height: 100vh;
+  }
+
+  #menu li {
+    margin-bottom: 1.4rem;
+  }
+
+  #menu a {
+    text-decoration: none;
+    color: #404040;
+    font-size: 1.2rem;
+  }
+
+  #aside div.card {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10rem;
+  }
 }
